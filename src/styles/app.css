@@ -1,0 +1,34 @@
+.js-grid-helper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.js-grid-helper.is-hidden{
+  display: none;
+}
+
+.js-grid-helper .mesh-container{
+  background: rgba(0, 162, 216, 0.16);
+}
+
+.js-grid-helper .mesh-container, .js-grid-helper [class*="mesh-column"], .js-grid-helper .mesh-void{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.js-grid-helper .mesh-void .mesh-void{
+  transform: translateY(-100%);
+}
+
+.js-grid-helper [class*="mesh-column"]::before{
+    content:'';
+    display: block;
+    width: 100%;
+    background: rgba(36, 162, 216, 0.14);
+    height: 100%;
+}
