@@ -1,7 +1,7 @@
 {
 	"name": "grid-helper",
 	"version": "0.0.1",
-	"description": "grid-helper utility to visualize grid layout",
+	"description": "helping utility to visualize grid layout",
 	"main": "build/grid-helper.min.js",
 	"scripts": {
 		"build:prod": "NODE_ENV=production webpack --config config/webpack.config.js --mode production",
