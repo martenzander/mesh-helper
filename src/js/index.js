@@ -1,7 +1,6 @@
 import "./../styles/app.css";
 
 function Visualizer(parameters = {}) {
-	console.log(parameters.isHidden);
 	this.trigger = parameters.trigger || 72;
 	this.isHidden =
 		parameters.isHidden !== undefined ? parameters.isHidden : true;
