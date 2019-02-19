@@ -3,9 +3,9 @@
     <h3 align="center">
         Grid Helper
     </h3>
-    <!-- <p align="center">
-        Subline
-    </p> -->
+    <p align="center">
+        utillity to toggle visual representations of your grid
+    </p>
 </p>
 
 ## Installation
