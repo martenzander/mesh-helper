@@ -1,4 +1,4 @@
-TARGET{
+.TARGET{
   position: fixed;
   top: 0;
   left: 0;
@@ -8,24 +8,24 @@ TARGET{
   pointer-events: none;
 }
 
-TARGET.is-hidden{
+.TARGET.is-hidden{
   display: none;
 }
 
-TARGET CONTAINER{
+.TARGET .CONTAINER{
   background: rgba(0, 162, 216, 0.16);
 }
 
-TARGET CONTAINER, TARGET [class*="COLUMN"], TARGET VOID{
+.TARGET .CONTAINER, .TARGET [class*="COLUMN"], .TARGET .VOID{
   height: 100%;
   box-sizing: border-box;
 }
 
-TARGET VOID VOID{
+.TARGET .VOID .VOID{
   transform: translateY(-100%);
 }
 
-TARGET [class*="COLUMN"]::before{
+.TARGET [class*="COLUMN"]::before{
     content:'';
     display: block;
     width: 100%;
