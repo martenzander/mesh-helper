@@ -1,6 +1,6 @@
 {
 	"name": "grid-helper",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "helping utility to visualize grid layout",
 	"main": "build/grid-helper.min.js",
 	"scripts": {
@@ -11,13 +11,7 @@
 		"style": "postcss demo/css/src/styles.css --dir demo/css/ --config config/ --watch",
 		"start": "npm-run-all --parallel style code"
 	},
-	"keywords": [
-		"javascript",
-		"grid",
-		"layout",
-		"visualizer",
-		"js"
-	],
+	"keywords": ["javascript", "grid", "layout", "visualizer", "js"],
 	"author": "Marten Zander",
 	"license": "ISC",
 	"devDependencies": {
