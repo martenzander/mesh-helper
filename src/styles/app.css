@@ -1,4 +1,4 @@
-.js-grid-helper{
+TARGET{
   position: fixed;
   top: 0;
   left: 0;
@@ -8,24 +8,24 @@
   pointer-events: none;
 }
 
-.js-grid-helper.is-hidden{
+TARGET.is-hidden{
   display: none;
 }
 
-.js-grid-helper .CONTAINER{
+TARGET CONTAINER{
   background: rgba(0, 162, 216, 0.16);
 }
 
-.js-grid-helper .CONTAINER, .js-grid-helper [class*="COLUMN"], .js-grid-helper .VOID{
+TARGET CONTAINER, TARGET [class*="COLUMN"], TARGET VOID{
   height: 100%;
   box-sizing: border-box;
 }
 
-.js-grid-helper .VOID .VOID{
+TARGET VOID VOID{
   transform: translateY(-100%);
 }
 
-.js-grid-helper [class*="COLUMN"]::before{
+TARGET [class*="COLUMN"]::before{
     content:'';
     display: block;
     width: 100%;

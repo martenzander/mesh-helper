@@ -3,17 +3,13 @@ class Visualizer {
 
 	constructor(parameters = {}) {
 		this.trigger = parameters.trigger || 72;
-		this.isHidden =
-			parameters.isHidden !== undefined ? parameters.isHidden : true;
+		this.isHidden = parameters.isHidden !== undefined ? parameters.isHidden : true;
 		this.targetSelector = parameters.target || ".js-grid-helper";
-		this.targets = Array.from(
-			document.querySelectorAll(this.targetSelector)
-		);
-		Visualizer.SETTINGS.containerClass =
-			parameters.containerClass || "mesh-container";
-		Visualizer.SETTINGS.voidClass = parameters.voidClass || "mesh-void";
-		Visualizer.SETTINGS.columnClass =
-			parameters.columnClass || "mesh-column";
+		this.targets = Array.from(document.querySelectorAll(this.targetSelector));
+		Visualizer.SETTINGS.target = this.targetSelector;
+		Visualizer.SETTINGS.containerClass = parameters.containerClass || ".mesh-container";
+		Visualizer.SETTINGS.voidClass = parameters.voidClass || ".mesh-void";
+		Visualizer.SETTINGS.columnClass = parameters.columnClass || ".mesh-column";
 		require("./../styles/app.css");
 
 		this.onKeyDown = this.onKeyDown.bind(this);
