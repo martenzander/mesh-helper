@@ -18,7 +18,24 @@ const config = {
 		rules: [
 			{
 				test: /\.css$/,
-				use: ["style-loader", "css-loader"],
+				use: [
+					{
+						loader: "style-loader",
+						options: {
+							transform: path.resolve(
+								__dirname,
+								"../",
+								"src",
+								"js",
+								"transformStyles.js"
+							),
+						},
+					},
+					{
+						loader: "css-loader",
+						options: {},
+					},
+				],
 			},
 			{
 				test: /\.js$/,

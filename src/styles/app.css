@@ -12,20 +12,20 @@
   display: none;
 }
 
-.js-grid-helper .mesh-container{
+.js-grid-helper .CONTAINER{
   background: rgba(0, 162, 216, 0.16);
 }
 
-.js-grid-helper .mesh-container, .js-grid-helper [class*="mesh-column"], .js-grid-helper .mesh-void{
+.js-grid-helper .CONTAINER, .js-grid-helper [class*="COLUMN"], .js-grid-helper .VOID{
   height: 100%;
   box-sizing: border-box;
 }
 
-.js-grid-helper .mesh-void .mesh-void{
+.js-grid-helper .VOID .VOID{
   transform: translateY(-100%);
 }
 
-.js-grid-helper [class*="mesh-column"]::before{
+.js-grid-helper [class*="COLUMN"]::before{
     content:'';
     display: block;
     width: 100%;

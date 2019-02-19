@@ -1,23 +1,37 @@
-import "./../styles/app.css";
+class Visualizer {
+	static SETTINGS = {};
 
-function Visualizer(parameters = {}) {
-	console.log(parameters.isHidden);
-	this.trigger = parameters.trigger || 72;
-	this.isHidden =
-		parameters.isHidden !== undefined ? parameters.isHidden : true;
-	this.targetSelector = parameters.target || ".js-grid-helper";
-	this.targets = Array.from(document.querySelectorAll(this.targetSelector));
+	constructor(parameters = {}) {
+		this.trigger = parameters.trigger || 72;
+		this.isHidden =
+			parameters.isHidden !== undefined ? parameters.isHidden : true;
+		this.targetSelector = parameters.target || ".js-grid-helper";
+		this.targets = Array.from(
+			document.querySelectorAll(this.targetSelector)
+		);
+		Visualizer.SETTINGS.containerClass =
+			parameters.containerClass || "mesh-container";
+		Visualizer.SETTINGS.voidClass = parameters.voidClass || "mesh-void";
+		Visualizer.SETTINGS.columnClass =
+			parameters.columnClass || "mesh-column";
+		require("./../styles/app.css");
 
-	const init = e => {
+		this.onKeyDown = this.onKeyDown.bind(this);
+
+		this.init();
+	}
+
+	init() {
 		if (this.isHidden) {
 			this.targets.forEach(target => {
 				target.classList.add("is-hidden");
 			});
 		}
-		document.addEventListener("keydown", this.onKeyDown);
-	};
 
-	this.onKeyDown = e => {
+		document.addEventListener("keydown", this.onKeyDown);
+	}
+
+	onKeyDown(e) {
 		const code = e.keyCode;
 		if (code === this.trigger) {
 			this.targets.forEach(target => {
@@ -28,9 +42,7 @@ function Visualizer(parameters = {}) {
 				}
 			});
 		}
-	};
-
-	init();
+	}
 }
 
 export { Visualizer };
