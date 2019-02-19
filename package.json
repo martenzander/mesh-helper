@@ -11,7 +11,13 @@
 		"style": "postcss demo/css/src/styles.css --dir demo/css/ --config config/ --watch",
 		"start": "npm-run-all --parallel style code"
 	},
-	"keywords": ["javascript", "grid", "layout", "visualizer", "js"],
+	"keywords": [
+		"javascript",
+		"grid",
+		"layout",
+		"visualizer",
+		"js"
+	],
 	"author": "Marten Zander",
 	"license": "ISC",
 	"devDependencies": {
@@ -20,6 +26,7 @@
 		"babel-core": "^6.26.3",
 		"babel-eslint": "^10.0.1",
 		"babel-loader": "^8.0.4",
+		"babel-plugin-transform-class-properties": "^6.24.1",
 		"babel-polyfill": "^6.26.0",
 		"babel-preset-es2015": "^6.24.1",
 		"css-loader": "^2.1.0",
