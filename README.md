@@ -11,7 +11,7 @@
 ## Installation
 
 ```
-npm i git+ssh://git@gitlab.com/SlimMarten/grid-helper.git#master
+npm i git+ssh://git@gitlab.com/slimInteractive/grid-helper.git#master
 ```
 
 ## Usage
