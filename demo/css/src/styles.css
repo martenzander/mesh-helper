@@ -8,6 +8,10 @@
     name: mesh;
     query-condition: min-width;
     responsive-gutter: false;
+    use-name-prefix: false;
+    naming-column: col;
+    naming-container: container;
+    naming-void: row;
 
     @mesh-viewport-sm {
         container-width: 540px;

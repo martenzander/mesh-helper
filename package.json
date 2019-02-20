@@ -11,7 +11,13 @@
 		"style": "postcss demo/css/src/styles.css --dir demo/css/ --config config/ --watch",
 		"start": "npm-run-all --parallel style code"
 	},
-	"keywords": ["javascript", "grid", "layout", "visualizer", "js"],
+	"keywords": [
+		"javascript",
+		"grid",
+		"layout",
+		"visualizer",
+		"js"
+	],
 	"author": "Marten Zander",
 	"license": "ISC",
 	"devDependencies": {
@@ -37,7 +43,7 @@
 		"postcss-each": "^0.10.0",
 		"postcss-for": "^2.1.1",
 		"postcss-import": "^12.0.1",
-		"postcss-mesh": "^1.0.1",
+		"postcss-mesh": "^1.1.0",
 		"postcss-nested": "^4.1.1",
 		"postcss-nested-ancestors": "^2.0.0",
 		"postcss-pxtorem": "^4.0.1",
