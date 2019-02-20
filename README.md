@@ -22,7 +22,6 @@ import * as GridHelper from 'grid-helper';
 
 ...
 
-
 const gridHelper = new GridHelper.Visualizer( parameters : {} );
 ```
 
@@ -66,5 +65,47 @@ Keycode to toggle the helper's visibility.
 ```js
 const gridHelper = new GridHelper.Visualizer({
   trigger: 72,            // default "h"
+});
+```
+
+## Example
+
+#### HTML
+The grid-helper does **not** create the necessary HTML for you.
+
+```HTML
+<div class="js-grid-helper">
+  <div class="container">
+    <div class="row">
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+    </div>
+  </div>
+</div>
+```
+
+#### Javascript
+```JS
+import * as GridHelper from 'grid-helper';
+
+...
+
+const gridHelper = new GridHelper.Visualizer({
+  isHidden: false,
+  trigger: 72,
+  target: 'js-grid-helper',
+  containerClass: '.container',
+  voidClass: '.row',
+  columnClass: '.col'
 });
 ```
