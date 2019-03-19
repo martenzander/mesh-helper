@@ -1,6 +1,6 @@
 import { Visualizer } from "./index";
 
-export default css => {
+function transformStyles(css) {
 	const transformed = css
 		.replace(/TARGET/gm, Visualizer.SETTINGS.target.replace(".", ""))
 		.replace(/CONTAINER/gm, Visualizer.SETTINGS.containerClass.replace(".", ""))
@@ -8,4 +8,6 @@ export default css => {
 		.replace(/COLUMN/gm, Visualizer.SETTINGS.columnClass.replace(".", ""));
 
 	return transformed;
-};
+}
+
+export default transformStyles;
