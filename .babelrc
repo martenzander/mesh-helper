@@ -1,5 +1,19 @@
 {
-	"presets": ["@babel/preset-env"],
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"browsers": [
+						">0.25%",
+						"not op_mini all"
+					]
+				},
+				"modules": false,
+				"useBuiltIns": "usage"
+			}
+		]
+	],
 	"plugins": [
 		"transform-class-properties"
 	]
