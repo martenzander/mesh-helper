@@ -7,7 +7,7 @@ const fileName =
 		: `${packageConfig.name}.min.js`;
 
 const config = {
-	entry: ["./src/js/index.js"],
+	entry: ["@babel/polyfill", "./src/js/index.js"],
 	output: {
 		library: "GridHelper",
 		libraryTarget: "umd",
