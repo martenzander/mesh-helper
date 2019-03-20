@@ -13,32 +13,17 @@
 		</style>
 	</head>
 	<body>
-		<div class="js-grid-helper">
-			<div class="container">
-				<div class="row">
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-					<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
-				</div>
-			</div>
-		</div>
 		<script type="text/javascript">
-			const gridVisualizer = new GridHelper.Visualizer({
-				trigger: 72,
-				isHidden: false,
-				target: ".js-grid-helper",
-				containerClass: ".container",
-				voidClass: ".row",
-				columnClass: ".col"
+			const gridVisualizer = new GridHelper.default({
+				key: "x",
+				viewports : ["sm","md","lg","xl"],
+				mainClass: "js-grid-helper",
+				containerClass: "container",
+				voidClass: "row",
+				columnClass: "col",
+				columnColor:"#ff000022",
+				gutterColor:"#ff00ff22",
+
 			});
 		</script>
 	</body>

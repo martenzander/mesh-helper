@@ -1,11 +1,13 @@
-import { Visualizer } from "./index";
+import GridHelper from "./index";
 
 function transformStyles(css) {
 	const transformed = css
-		.replace(/TARGET/gm, Visualizer.SETTINGS.target.replace(".", ""))
-		.replace(/CONTAINER/gm, Visualizer.SETTINGS.containerClass.replace(".", ""))
-		.replace(/VOID/gm, Visualizer.SETTINGS.voidClass.replace(".", ""))
-		.replace(/COLUMN/gm, Visualizer.SETTINGS.columnClass.replace(".", ""));
+		.replace(/COLUMNCOLOR/gm, GridHelper.SETTINGS.columnColor)
+		.replace(/GUTTERCOLOR/gm, GridHelper.SETTINGS.gutterColor)
+		.replace(/TARGET/gm, GridHelper.SETTINGS.target)
+		.replace(/CONTAINER/gm, GridHelper.SETTINGS.containerClass)
+		.replace(/VOID/gm, GridHelper.SETTINGS.voidClass)
+		.replace(/COLUMN/gm, GridHelper.SETTINGS.columnClass);
 
 	return transformed;
 }

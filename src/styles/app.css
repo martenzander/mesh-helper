@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9001;
   width: 100%;
   height: 100%;
   pointer-events: none;
@@ -13,7 +13,7 @@
 }
 
 .TARGET .CONTAINER{
-  background: rgba(0, 162, 216, 0.16);
+  background-color: GUTTERCOLOR;
 }
 
 .TARGET .CONTAINER, .TARGET [class*="COLUMN"], .TARGET .VOID{
@@ -26,9 +26,9 @@
 }
 
 .TARGET [class*="COLUMN"]::before{
-    content:'';
-    display: block;
-    width: 100%;
-    background: rgba(36, 162, 216, 0.14);
-    height: 100%;
+  content:'';
+  display: block;
+  width: 100%;
+  background-color: COLUMNCOLOR;
+  height: 100%;
 }
