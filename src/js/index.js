@@ -14,6 +14,7 @@ class GridHelper {
 		this.containerClass = parameters.containerClass || "mesh-container";
 		this.voidClass = parameters.voidClass || "mesh-void";
 		this.columnClass = parameters.columnClass || "mesh-column";
+
 		this.columnColor = this.hexToRgba(parameters.columnColor || "#24a2d824");
 		this.gutterColor = this.hexToRgba(parameters.gutterColor || "#24a2d824");
 
