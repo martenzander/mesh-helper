@@ -1,8 +1,8 @@
 {
-	"name": "grid-helper",
-	"version": "0.1.0",
+	"name": "mesh-helper",
+	"version": "1.0.0",
 	"description": "helping utility to visualize grid layout",
-	"main": "build/grid-helper.min.js",
+	"main": "build/mesh-helper.min.js",
 	"scripts": {
 		"build:prod": "NODE_ENV=production webpack --config config/webpack.config.js --mode production",
 		"build:dev": "NODE_ENV=development webpack --config config/webpack.config.js --mode development",

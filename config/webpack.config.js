@@ -9,7 +9,7 @@ const fileName =
 const config = {
 	entry: ["@babel/polyfill", "./src/js/index.js"],
 	output: {
-		library: "GridHelper",
+		library: "MeshHelper",
 		libraryTarget: "umd",
 		path: path.resolve(__dirname, "../", "build"),
 		filename: fileName,

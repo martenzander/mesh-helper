@@ -1,7 +1,7 @@
 <p align="center">
     <img align="center" src="https://exchange.weareslim.de/assets/images/svg/logo_blue.svg" width="100" height="auto" alt="slim Logo" class="js-lazy-loaded">
     <h3 align="center">
-        Grid Helper
+        Mesh Helper
     </h3>
     <p align="center">
         Utility to toggle visual representations of your grid
@@ -11,18 +11,18 @@
 ## Installation
 
 ```
-npm i git+ssh://git@gitlab.com/slimInteractive/grid-helper.git#master
+npm i mesh-helper
 ```
 
 ## Usage
 
 
 ```js
-import GridHelper from 'grid-helper';
+import MeshHelper from 'mesh-helper';
 
 ...
 
-const gridHelper = new GridHelper( parameters : {} );
+const meshHelper = new MeshHelper( parameters : {} );
 ```
 
 ## Parameters
@@ -32,7 +32,7 @@ const gridHelper = new GridHelper( parameters : {} );
 Your helper's base selector. This class is used to nest helper-relevant styles and toggle the visibility.
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   mainClass: "",                    // default "js-grid-helper"
 });
 ```
@@ -42,7 +42,7 @@ const gridHelper = new GridHelper({
 Selector of your grid's container, void or columns. These selectors are used to compile helper-relevant styles.
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   containerClass: "",               // default "mesh-container"
   voidClass: "",                    // default "mesh-void"
   columnClass: "",                  // default "mesh-column"
@@ -54,7 +54,7 @@ const gridHelper = new GridHelper({
 Sets the helper's initial visibility.
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   isHidden: false,                  // default true
 });
 ```
@@ -64,7 +64,7 @@ const gridHelper = new GridHelper({
 Remembers the visibility state in a session cookie
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   useCookie: false,                 // default true
 });
 ```
@@ -74,7 +74,7 @@ const gridHelper = new GridHelper({
 Generated the DOM for you
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   generateDOM: false,               // default true
 });
 ```
@@ -85,7 +85,7 @@ Set the number of columns.<br>
 >Only required when DOM gets generated.
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   generateDOM: false,               // default true
 });
 ```
@@ -96,7 +96,7 @@ Define the viewports your grid use.<br>
 >Only required when DOM gets generated.
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   viewports: ["sm", "md", "lg"],    // default ["sm", "md", "lg", "xl"]
 });
 ```
@@ -106,7 +106,7 @@ const gridHelper = new GridHelper({
 Sets the colors for gutter and column
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   columnColor:"#ff000022",          // default "#24a2d824"
   gutterColor:"#ff00ff22",          // default "#24a2d824"
 });
@@ -117,7 +117,7 @@ const gridHelper = new GridHelper({
 Key char to toggle the helper's visibility.
 
 ```js
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   key: 'x',                         // default "h"
 });
 ```
@@ -150,11 +150,11 @@ In case you don't want to let the script generate the DOM for you.
 
 #### Javascript
 ```JS
-import GridHelper from 'grid-helper';
+import meshHelper from 'mesh-helper';
 
 ...
 
-const gridHelper = new GridHelper({
+const meshHelper = new MeshHelper({
   isHidden: false,
   trigger: 'b',
   target: 'js-grid-helper',
