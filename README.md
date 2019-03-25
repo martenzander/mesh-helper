@@ -150,7 +150,7 @@ In case you don't want to let the script generate the DOM for you.
 
 #### Javascript
 ```JS
-import meshHelper from 'mesh-helper';
+import MeshHelper from 'mesh-helper';
 
 ...
 
