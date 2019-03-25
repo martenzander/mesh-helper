@@ -1,5 +1,5 @@
 <p align="center">
-    <img align="center" src="https://exchange.weareslim.de/assets/images/svg/logo_blue.svg" width="100" height="auto" alt="slim Logo" class="js-lazy-loaded">
+    <img src="https://raw.githubusercontent.com/SlimMarten/postcss-mesh/development/assets/img/logo.png" align="center">
     <h3 align="center">
         Mesh Helper
     </h3>
