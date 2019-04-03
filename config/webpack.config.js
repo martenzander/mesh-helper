@@ -22,13 +22,7 @@ const config = {
 					{
 						loader: "style-loader",
 						options: {
-							transform: path.resolve(
-								__dirname,
-								"../",
-								"src",
-								"js",
-								"transformStyles.js"
-							),
+							transform: path.join("src", "js", "transformStyles.js"),
 						},
 					},
 					{
