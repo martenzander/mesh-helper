@@ -7,7 +7,7 @@ const fileName =
 		: `${packageConfig.name}.min.js`;
 
 const config = {
-	entry: ["@babel/polyfill", "./src/js/index.js"],
+	entry: "./src/js/index.js",
 	output: {
 		library: "MeshHelper",
 		libraryTarget: "umd",
