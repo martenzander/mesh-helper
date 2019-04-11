@@ -128,7 +128,7 @@ class GridHelper {
 		if (this.useCookie && sessionStorage.getItem("gridHelperIsHidden") !== null) {
 			return sessionStorage.getItem("gridHelperIsHidden") === "true";
 		}
-		return false;
+		return true;
 	}
 
 	onKeyDown(e) {
