@@ -98,7 +98,8 @@ class GridHelper {
 				a = hex.substring(6, 8);
 				break;
 			}
-			default: return "";
+			default:
+				return "";
 		}
 
 		if (typeof a === "undefined") {
@@ -128,13 +129,26 @@ class GridHelper {
 		if (this.useCookie && sessionStorage.getItem("gridHelperIsHidden") !== null) {
 			return sessionStorage.getItem("gridHelperIsHidden") === "true";
 		}
-		return false;
+		return true;
 	}
 
 	onKeyDown(e) {
+		const activeElement = document.activeElement;
+		if (activeElement) {
+			if (
+				activeElement.tagName.toLowerCase() === "input" &&
+				["text", "password", "email", "number"].includes(activeElement.type.toLowerCase())
+			)
+				return;
+			if (activeElement.tagName.toLowerCase() === "textarea") return;
+		}
 		if (e.key.toLowerCase() === this.key) {
 			this.target.classList.toggle("is-hidden");
-			if (this.useCookie) sessionStorage.setItem("gridHelperIsHidden", this.target.classList.contains("is-hidden"));
+			if (this.useCookie)
+				sessionStorage.setItem(
+					"gridHelperIsHidden",
+					this.target.classList.contains("is-hidden")
+				);
 		}
 	}
 }
