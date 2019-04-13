@@ -1,10 +1,10 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/SlimMarten/postcss-mesh/development/assets/img/logo.png" align="center">
+    <a href="https://www.postcss-mesh.org" target="_blank"><img src="https://raw.githubusercontent.com/SlimMarten/postcss-mesh/development/assets/img/logo.png" align="center"></a>
     <h3 align="center">
-        Mesh Helper
+        Mesh-Helper
     </h3>
     <p align="center">
-        Utility to toggle visual representations of your grid
+      visual representation of your <a href="https://www.postcss-mesh.org" target="_blank">postcss-mesh</a> setup
     </p>
 </p>
 
