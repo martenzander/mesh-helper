@@ -86,7 +86,7 @@ Set the number of columns.<br>
 
 ```js
 const meshHelper = new MeshHelper({
-  generateDOM: false,               // default true
+  columns: 12,                      // default 12
 });
 ```
 
@@ -159,7 +159,7 @@ const meshHelper = new MeshHelper({
   trigger: 'b',
   target: 'js-grid-helper',
   containerClass: '.container',
-  voidClass: '.row',
-  columnClass: '.col'
+  voidClass: 'row',
+  columnClass: 'col'
 });
 ```
