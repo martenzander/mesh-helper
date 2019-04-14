@@ -6,6 +6,10 @@
     <p align="center">
       visual representation of your <a href="https://www.postcss-mesh.org" target="_blank">postcss-mesh</a> setup
     </p>
+    <p align="center">
+      <a href="https://www.npmjs.com/package/mesh-helper" rel="nofollow"><img src="https://img.shields.io/npm/v/mesh-helper.svg" alt="Slack" data-canonical-src="https://img.shields.io/npm/v/mesh-helper.svg" style="max-width:100%;"></a>
+      <a href="https://www.npmjs.com/package/mesh-helper" rel="nofollow"><img src="https://img.shields.io/npm/dt/mesh-helper.svg" alt="Slack" data-canonical-src="https://img.shields.io/npm/dt/mesh-helper.svg" style="max-width:100%;"></a>
+    </p>
 </p>
 
 ## Installation
