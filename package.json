@@ -1,6 +1,6 @@
 {
 	"name": "mesh-helper",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "helping utility to visualize grid layout",
 	"main": "build/mesh-helper.min.js",
 	"scripts": {
