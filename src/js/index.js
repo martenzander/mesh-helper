@@ -134,7 +134,7 @@ class GridHelper {
 
 	onKeyDown(e) {
 		const activeElement = document.activeElement;
-		if (activeElement) {
+		if (activeElement && activeElement.type) {
 			if (
 				activeElement.tagName.toLowerCase() === "input" &&
 				["text", "password", "email", "number"].includes(activeElement.type.toLowerCase())
@@ -142,7 +142,7 @@ class GridHelper {
 				return;
 			if (activeElement.tagName.toLowerCase() === "textarea") return;
 		}
-		if (e.key.toLowerCase() === this.key) {
+		if (e.key != null && e.key.toLowerCase() === this.key) {
 			this.target.classList.toggle("is-hidden");
 			if (this.useCookie)
 				sessionStorage.setItem(
